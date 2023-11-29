@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400&display=swap');
+
+body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0B6E4F 0%, #074544 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.info {
+font-family: 'Montserrat Alternates', sans-serif;
+font-weight: 300;
+  color: white;
+  text-shadow: 0 0 2px white;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+    font-size: 1.8rem;
+    text-align: center;
+}
+span{
+    font-size: 2rem;
+    display: block;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+p{
+    font-size: 1rem;
+    text-align: center;
+}
+h3{
+    font-size: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 300;
+}
+.social-media{
+    display: flex;
+    gap: 1rem;
+}
+.social-media a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+}
+.social-media i{
+    color: #074544;
+}
+#snow i {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    animation: snowfall 5s linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate(-10vw, -50vh);
+    }
+
+    100% {
+        transform: translate(10vw, 50vh);
+    }
+}
